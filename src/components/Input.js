@@ -15,7 +15,7 @@ function Input() {
       .then((data) => {
         console.log(data);
         setCountry(data.current);
-        console.log(country);
+
         setName(data);
         setIsLoading(false);
       });
@@ -42,7 +42,7 @@ function Input() {
       </div>
       {isLoading ? (
         <span className="loader"></span>
-      ) : (
+      ) : country ? (
         <div className="Card">
           <h2>{name?.location?.name}</h2>
           <img src={country?.condition?.icon} />
@@ -58,6 +58,8 @@ function Input() {
             <p>Feels Like: {country?.feelslike_c} &#8451;</p>
           </div>
         </div>
+      ) : (
+        <h1>Please Search A city in which located in the planet earth</h1>
       )}
     </div>
   );
