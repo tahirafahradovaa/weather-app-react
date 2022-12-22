@@ -41,7 +41,9 @@ function Input() {
         <button onClick={handleChange}> Get Weather </button>
       </div>
       {isLoading ? (
-        <span className="loader"></span>
+        <div className="loader-cont">
+          <span className="loader"></span>
+        </div>
       ) : country ? (
         <div className="Card">
           <h2>{name?.location?.name}</h2>

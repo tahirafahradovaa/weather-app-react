@@ -35,7 +35,13 @@ input{
     height: 60px;
     border-radius: 15px;
 }
-
+.loader-cont{
+    text-align: center;
+    height: 259px;
+    margin-right: 210px;
+    margin-top: 110px;
+  
+}
 .loader {
     margin-left: 160px;
     width: 48px;
