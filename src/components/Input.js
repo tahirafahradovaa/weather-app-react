@@ -38,7 +38,15 @@ function Input() {
             setSearch(e.target.value);
           }}
         />
-        <button onClick={handleChange}> Get Weather </button>
+        <button
+          style={{
+            cursor: "pointer",
+          }}
+          onClick={handleChange}
+        >
+          {" "}
+          Get Weather{" "}
+        </button>
       </div>
       {isLoading ? (
         <div className="loader-cont">
